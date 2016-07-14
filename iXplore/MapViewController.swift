@@ -75,7 +75,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, UITableViewDelegat
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        mapView.setCenterCoordinate(entries[indexPath.row].coordinate, animated: true)
+        //mapView.setCenterCoordinate(entries[indexPath.row].coordinate, animated: true)
+        mapView.selectAnnotation(entries[indexPath.row], animated: true)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     

@@ -25,10 +25,10 @@ class Entry: NSObject, MKAnnotation, NSCoding, Comparable {
         didSet {
             if let photo = photo {
                 if photo.size.height < photo.size.width {
-                    let ratio = 88 / photo.size.height
+                    let ratio = 264 / photo.size.height
                     self.photo = photo.scaled(to: CGSize(width: photo.size.width * ratio, height: photo.size.height * ratio))
                 } else {
-                    let ratio = 88 / photo.size.width
+                    let ratio = 264 / photo.size.width
                     self.photo = photo.scaled(to: CGSize(width: photo.size.width * ratio, height: photo.size.height * ratio))
                 }
             }

@@ -140,7 +140,7 @@ class AddEntryViewController: UIViewController,
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        locationManager.desiredAccuracy = 100
+        locationManager.desiredAccuracy = 0
         locationManager.startUpdatingLocation()
     }
     

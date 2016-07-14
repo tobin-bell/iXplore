@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.16862745098039217" green="0.24313725490196078" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.46666666666666667" green="0.74509803921568629" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -189,12 +189,20 @@
                                             <action selector="locationButtonPressed:" destination="CvW-jC-hMP" eventType="touchUpInside" id="Qhc-b0-cBc"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Not Set" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHe-1z-idU" userLabel="Location Label">
-                                        <rect key="frame" x="8" y="12" width="121" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Set" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHe-1z-idU" userLabel="Location Label">
+                                        <rect key="frame" x="30" y="12" width="55" height="20"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="LocationIconFilled" translatesAutoresizingMaskIntoConstraints="NO" id="Yrm-qn-NOM">
+                                        <rect key="frame" x="8" y="15" width="14" height="14"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                <color key="value" red="0.46666666666666667" green="0.74509803921568629" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -206,11 +214,15 @@
                                     <constraint firstItem="dHe-1z-idU" firstAttribute="centerY" secondItem="3BM-Fm-E3N" secondAttribute="centerY" id="K7D-x2-UkM"/>
                                     <constraint firstItem="eFp-fU-stl" firstAttribute="leading" secondItem="3BM-Fm-E3N" secondAttribute="leading" id="UGS-0m-Om1"/>
                                     <constraint firstAttribute="trailing" secondItem="eFp-fU-stl" secondAttribute="trailing" id="Won-wP-6kL"/>
+                                    <constraint firstItem="dHe-1z-idU" firstAttribute="leading" secondItem="Yrm-qn-NOM" secondAttribute="trailing" constant="8" id="YCK-MG-Wq4"/>
+                                    <constraint firstItem="Yrm-qn-NOM" firstAttribute="centerY" secondItem="3BM-Fm-E3N" secondAttribute="centerY" id="eZa-ii-2iZ"/>
                                     <constraint firstItem="eFp-fU-stl" firstAttribute="top" secondItem="3BM-Fm-E3N" secondAttribute="top" id="jiD-wl-EFO"/>
                                     <constraint firstItem="dHe-1z-idU" firstAttribute="leading" secondItem="3BM-Fm-E3N" secondAttribute="leading" constant="8" id="nA4-w9-X8T"/>
+                                    <constraint firstItem="Yrm-qn-NOM" firstAttribute="leading" secondItem="3BM-Fm-E3N" secondAttribute="leading" constant="8" id="uV1-kR-q9k"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="AcK-1m-POQ"/>
                                         <exclude reference="nA4-w9-X8T"/>
                                         <exclude reference="jiD-wl-EFO"/>
                                     </mask>
@@ -362,19 +374,19 @@
                                                         <constraint firstAttribute="width" secondItem="UKl-nH-S16" secondAttribute="height" id="OX9-Cu-r3G"/>
                                                     </constraints>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdw-A4-frO" userLabel="Label Container">
-                                                    <rect key="frame" x="102" y="23" width="218" height="42"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdw-A4-frO" userLabel="Label Container">
+                                                    <rect key="frame" x="102" y="23" width="265" height="42"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Workshop 17" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1k-Fo-JF7">
-                                                            <rect key="frame" x="0.0" y="0.0" width="218" height="23"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workshop 17" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1k-Fo-JF7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="265" height="23"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="July" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9X-TJ-LVY">
-                                                            <rect key="frame" x="0.0" y="25" width="218" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9X-TJ-LVY">
+                                                            <rect key="frame" x="0.0" y="25" width="265" height="17"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                            <color key="textColor" red="0.46666666670000001" green="0.74509803919999995" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -422,19 +434,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0U-v4-jAY" userLabel="Label Container">
-                                                    <rect key="frame" x="15" y="23" width="305" height="42"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0U-v4-jAY" userLabel="Label Container">
+                                                    <rect key="frame" x="15" y="23" width="352" height="42"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Workshop 17" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXL-On-96D">
-                                                            <rect key="frame" x="0.0" y="0.0" width="305" height="23"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workshop 17" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXL-On-96D">
+                                                            <rect key="frame" x="0.0" y="0.0" width="352" height="23"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="July" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BML-9L-GfQ">
-                                                            <rect key="frame" x="0.0" y="25" width="305" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BML-9L-GfQ">
+                                                            <rect key="frame" x="0.0" y="25" width="352" height="17"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                            <color key="textColor" red="0.46666666670000001" green="0.74509803919999995" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -655,29 +667,36 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Not Set" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be2-y7-K6f" userLabel="Location Label">
-                                        <rect key="frame" x="8" y="12.5" width="55" height="19.5"/>
+                                        <rect key="frame" x="30" y="12" width="55" height="19.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" image="LocationIconFilled" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-NK-axF">
+                                        <rect key="frame" x="8" y="15" width="14" height="14"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Be2-y7-K6f" firstAttribute="leading" secondItem="5wH-9x-pZ0" secondAttribute="leading" constant="8" id="88f-yb-zVf"/>
                                     <constraint firstAttribute="trailing" secondItem="G4N-aG-cZq" secondAttribute="trailing" constant="8" id="KWp-lT-mAK"/>
+                                    <constraint firstItem="Be2-y7-K6f" firstAttribute="leading" secondItem="r3W-NK-axF" secondAttribute="trailing" constant="8" id="LH5-fX-BTr"/>
                                     <constraint firstItem="G4N-aG-cZq" firstAttribute="centerY" secondItem="5wH-9x-pZ0" secondAttribute="centerY" id="RH8-l3-4Dj"/>
                                     <constraint firstAttribute="bottom" secondItem="o91-Do-dcN" secondAttribute="bottom" id="VXS-MM-52a"/>
                                     <constraint firstItem="Be2-y7-K6f" firstAttribute="centerY" secondItem="5wH-9x-pZ0" secondAttribute="centerY" id="ZtV-ad-xim"/>
                                     <constraint firstItem="Be2-y7-K6f" firstAttribute="leading" secondItem="5wH-9x-pZ0" secondAttribute="leading" constant="8" id="akr-fe-Us3"/>
                                     <constraint firstAttribute="trailing" secondItem="o91-Do-dcN" secondAttribute="trailing" id="iEc-IH-2Bd"/>
+                                    <constraint firstItem="r3W-NK-axF" firstAttribute="leading" secondItem="5wH-9x-pZ0" secondAttribute="leading" constant="8" id="iVW-rC-XeX"/>
                                     <constraint firstItem="o91-Do-dcN" firstAttribute="leading" secondItem="5wH-9x-pZ0" secondAttribute="leading" id="iqO-N9-Ux3"/>
+                                    <constraint firstItem="r3W-NK-axF" firstAttribute="centerY" secondItem="5wH-9x-pZ0" secondAttribute="centerY" id="oBh-7q-0M2"/>
                                     <constraint firstItem="o91-Do-dcN" firstAttribute="top" secondItem="5wH-9x-pZ0" secondAttribute="top" id="oFU-93-4cn"/>
                                     <constraint firstAttribute="height" constant="44" id="pCH-UZ-rr6"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="88f-yb-zVf"/>
                                         <exclude reference="oFU-93-4cn"/>
+                                        <exclude reference="88f-yb-zVf"/>
+                                        <exclude reference="akr-fe-Us3"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -768,6 +787,7 @@
     </scenes>
     <resources>
         <image name="CameraIcon" width="28" height="22"/>
+        <image name="LocationIconFilled" width="14" height="14"/>
     </resources>
     <color key="tintColor" red="0.94901960784313721" green="0.34509803921568627" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
 </document>
