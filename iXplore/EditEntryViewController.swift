@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class AddEntryViewController: UIViewController,
+class EditEntryViewController: UIViewController,
     CLLocationManagerDelegate,
     UIImagePickerControllerDelegate,
     UINavigationControllerDelegate {
@@ -27,10 +27,6 @@ class AddEntryViewController: UIViewController,
     var delegate: EntryViewControllerDelegate?
     
     var notesFieldOriginalHeight: CGFloat!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

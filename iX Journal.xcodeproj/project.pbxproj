@@ -17,7 +17,7 @@
 		02A7F9811D342E3900AF76FA /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9801D342E3900AF76FA /* EntryCell.swift */; };
 		02A7F9831D3431B200AF76FA /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9821D3431B200AF76FA /* Entry.swift */; };
 		02A7F9851D34354C00AF76FA /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9841D34354C00AF76FA /* AddEntryViewController.swift */; };
-		02A7F9871D34359200AF76FA /* AddEntryViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9861D34359200AF76FA /* AddEntryViewControllerDelegate.swift */; };
+		02A7F9871D34359200AF76FA /* EntryViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9861D34359200AF76FA /* EntryViewControllerDelegate.swift */; };
 		02A7F9891D34459D00AF76FA /* UIDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9881D34459D00AF76FA /* UIDateField.swift */; };
 		02A7F98B1D34495000AF76FA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F98A1D34495000AF76FA /* UIViewController.swift */; };
 		02A7F98D1D34D21400AF76FA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F98C1D34D21400AF76FA /* UIView.swift */; };
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		024567F51D36388B0010DC2F /* UISelectionField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISelectionField.swift; sourceTree = "<group>"; };
-		02A7F9691D342CC300AF76FA /* iXplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iXplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02A7F9691D342CC300AF76FA /* iX Journal.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iX Journal.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A7F96C1D342CC300AF76FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02A7F96E1D342CC300AF76FA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		02A7F9711D342CC300AF76FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		02A7F9801D342E3900AF76FA /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		02A7F9821D3431B200AF76FA /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		02A7F9841D34354C00AF76FA /* AddEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
-		02A7F9861D34359200AF76FA /* AddEntryViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewControllerDelegate.swift; sourceTree = "<group>"; };
+		02A7F9861D34359200AF76FA /* EntryViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewControllerDelegate.swift; sourceTree = "<group>"; };
 		02A7F9881D34459D00AF76FA /* UIDateField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDateField.swift; sourceTree = "<group>"; };
 		02A7F98A1D34495000AF76FA /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		02A7F98C1D34D21400AF76FA /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				02A7F97E1D342DF600AF76FA /* MapKit.framework */,
-				02A7F96B1D342CC300AF76FA /* iXplore */,
+				02A7F96B1D342CC300AF76FA /* iX Journal */,
 				02A7F96A1D342CC300AF76FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,18 +70,18 @@
 		02A7F96A1D342CC300AF76FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02A7F9691D342CC300AF76FA /* iXplore.app */,
+				02A7F9691D342CC300AF76FA /* iX Journal.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02A7F96B1D342CC300AF76FA /* iXplore */ = {
+		02A7F96B1D342CC300AF76FA /* iX Journal */ = {
 			isa = PBXGroup;
 			children = (
 				02A7F96C1D342CC300AF76FA /* AppDelegate.swift */,
 				02A7F96E1D342CC300AF76FA /* MapViewController.swift */,
 				02A7F9841D34354C00AF76FA /* AddEntryViewController.swift */,
-				02A7F9861D34359200AF76FA /* AddEntryViewControllerDelegate.swift */,
+				02A7F9861D34359200AF76FA /* EntryViewControllerDelegate.swift */,
 				02A7F9821D3431B200AF76FA /* Entry.swift */,
 				02A7F9801D342E3900AF76FA /* EntryCell.swift */,
 				02A7F9731D342CC300AF76FA /* Assets.xcassets */,
@@ -95,15 +95,16 @@
 				02A7F9751D342CC300AF76FA /* LaunchScreen.storyboard */,
 				02A7F9781D342CC300AF76FA /* Info.plist */,
 			);
+			name = "iX Journal";
 			path = iXplore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02A7F9681D342CC300AF76FA /* iXplore */ = {
+		02A7F9681D342CC300AF76FA /* iX Journal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02A7F97B1D342CC400AF76FA /* Build configuration list for PBXNativeTarget "iXplore" */;
+			buildConfigurationList = 02A7F97B1D342CC400AF76FA /* Build configuration list for PBXNativeTarget "iX Journal" */;
 			buildPhases = (
 				02A7F9651D342CC300AF76FA /* Sources */,
 				02A7F9661D342CC300AF76FA /* Frameworks */,
@@ -113,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = iXplore;
+			name = "iX Journal";
 			productName = iXplore;
-			productReference = 02A7F9691D342CC300AF76FA /* iXplore.app */;
+			productReference = 02A7F9691D342CC300AF76FA /* iX Journal.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 02A7F9641D342CC300AF76FA /* Build configuration list for PBXProject "iXplore" */;
+			buildConfigurationList = 02A7F9641D342CC300AF76FA /* Build configuration list for PBXProject "iX Journal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -146,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02A7F9681D342CC300AF76FA /* iXplore */,
+				02A7F9681D342CC300AF76FA /* iX Journal */,
 			);
 		};
 /* End PBXProject section */
@@ -173,7 +174,7 @@
 				02F82D341D36B7C900EE9EB5 /* UIColor.swift in Sources */,
 				02A7F98F1D34D29000AF76FA /* UIImage.swift in Sources */,
 				02A7F96F1D342CC300AF76FA /* MapViewController.swift in Sources */,
-				02A7F9871D34359200AF76FA /* AddEntryViewControllerDelegate.swift in Sources */,
+				02A7F9871D34359200AF76FA /* EntryViewControllerDelegate.swift in Sources */,
 				02A7F9811D342E3900AF76FA /* EntryCell.swift in Sources */,
 				024567F61D36388B0010DC2F /* UISelectionField.swift in Sources */,
 				02A7F9891D34459D00AF76FA /* UIDateField.swift in Sources */,
@@ -295,8 +296,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iXplore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.tobinbell.iXplore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iXperience.iX-Journal";
+				PRODUCT_NAME = "iX Journal.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -306,15 +307,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iXplore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.tobinbell.iXplore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iXperience.iX-Journal";
+				PRODUCT_NAME = "iX Journal.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02A7F9641D342CC300AF76FA /* Build configuration list for PBXProject "iXplore" */ = {
+		02A7F9641D342CC300AF76FA /* Build configuration list for PBXProject "iX Journal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02A7F9791D342CC400AF76FA /* Debug */,
@@ -323,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02A7F97B1D342CC400AF76FA /* Build configuration list for PBXNativeTarget "iXplore" */ = {
+		02A7F97B1D342CC400AF76FA /* Build configuration list for PBXNativeTarget "iX Journal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02A7F97C1D342CC400AF76FA /* Debug */,

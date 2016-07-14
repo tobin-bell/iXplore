@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:iXplore.xcodeproj">
+      location = "self:/Users/Tobin/Developer/iXplore/iX Journal.xcodeproj">
    </FileRef>
 </Workspace>
