@@ -1,6 +1,6 @@
 //
 //  Entry.swift
-//  iXplore
+//  iX Journal
 //
 //  Created by Tobin Bell on 7/11/16.
 //  Copyright © 2016 iXperience. All rights reserved.
@@ -37,12 +37,13 @@ class Entry: NSObject, MKAnnotation, NSCoding, Comparable {
     
     var coordinate: CLLocationCoordinate2D
     
-    init(title: String?, notes: String?, date: NSDate?, coordinate: CLLocationCoordinate2D) {
+    init(title: String?, notes: String?, date: NSDate?, coordinate: CLLocationCoordinate2D, photo: UIImage?) {
         self.ID = NSUUID()
         self.title = title ?? "Untitled"
         self.notes = notes ?? ""
         self.date = date ?? NSDate()
         self.coordinate = coordinate
+        self.photo = photo
     }
     
     required init?(coder: NSCoder) {
@@ -69,10 +70,12 @@ class Entry: NSObject, MKAnnotation, NSCoding, Comparable {
     }
 }
 
+// Equate two entries by their IDs.
 func ==(a: Entry, b: Entry) -> Bool {
     return  a.ID == b.ID
 }
 
+// Compare two entries by their dates. Earlier dates constitute "lesser" entries.
 func <(a: Entry, b: Entry) -> Bool {
     return a.date.compare(b.date) == .OrderedAscending
 }

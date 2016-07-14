@@ -7,43 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024567F61D36388B0010DC2F /* UISelectionField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024567F51D36388B0010DC2F /* UISelectionField.swift */; };
-		02A7F96D1D342CC300AF76FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F96C1D342CC300AF76FA /* AppDelegate.swift */; };
-		02A7F96F1D342CC300AF76FA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F96E1D342CC300AF76FA /* MapViewController.swift */; };
-		02A7F9721D342CC300AF76FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A7F9701D342CC300AF76FA /* Main.storyboard */; };
-		02A7F9741D342CC300AF76FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A7F9731D342CC300AF76FA /* Assets.xcassets */; };
-		02A7F9771D342CC300AF76FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A7F9751D342CC300AF76FA /* LaunchScreen.storyboard */; };
+		029DB4161D384E0500D6A9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB4091D384E0500D6A9F1 /* AppDelegate.swift */; };
+		029DB4171D384E0500D6A9F1 /* EditEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB40A1D384E0500D6A9F1 /* EditEntryViewController.swift */; };
+		029DB4181D384E0500D6A9F1 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB40B1D384E0500D6A9F1 /* Entry.swift */; };
+		029DB4191D384E0500D6A9F1 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB40C1D384E0500D6A9F1 /* EntryCell.swift */; };
+		029DB41A1D384E0500D6A9F1 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB40D1D384E0500D6A9F1 /* EntryViewController.swift */; };
+		029DB41B1D384E0500D6A9F1 /* EntryViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB40E1D384E0500D6A9F1 /* EntryViewControllerDelegate.swift */; };
+		029DB41C1D384E0500D6A9F1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB40F1D384E0500D6A9F1 /* MapViewController.swift */; };
+		029DB41D1D384E0500D6A9F1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB4101D384E0500D6A9F1 /* UIColor.swift */; };
+		029DB41E1D384E0500D6A9F1 /* UIDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB4111D384E0500D6A9F1 /* UIDateField.swift */; };
+		029DB41F1D384E0500D6A9F1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB4121D384E0500D6A9F1 /* UIImage.swift */; };
+		029DB4201D384E0500D6A9F1 /* UISelectionField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB4131D384E0500D6A9F1 /* UISelectionField.swift */; };
+		029DB4211D384E0500D6A9F1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB4141D384E0500D6A9F1 /* UIView.swift */; };
+		029DB4221D384E0500D6A9F1 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DB4151D384E0500D6A9F1 /* UIViewController.swift */; };
+		029DB4271D384E1100D6A9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029DB4231D384E1100D6A9F1 /* LaunchScreen.storyboard */; };
+		029DB4281D384E1100D6A9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029DB4251D384E1100D6A9F1 /* Main.storyboard */; };
+		029DB42A1D384E4200D6A9F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029DB4291D384E4200D6A9F1 /* Assets.xcassets */; };
 		02A7F97F1D342DF600AF76FA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A7F97E1D342DF600AF76FA /* MapKit.framework */; };
-		02A7F9811D342E3900AF76FA /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9801D342E3900AF76FA /* EntryCell.swift */; };
-		02A7F9831D3431B200AF76FA /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9821D3431B200AF76FA /* Entry.swift */; };
-		02A7F9851D34354C00AF76FA /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9841D34354C00AF76FA /* AddEntryViewController.swift */; };
-		02A7F9871D34359200AF76FA /* EntryViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9861D34359200AF76FA /* EntryViewControllerDelegate.swift */; };
-		02A7F9891D34459D00AF76FA /* UIDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F9881D34459D00AF76FA /* UIDateField.swift */; };
-		02A7F98B1D34495000AF76FA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F98A1D34495000AF76FA /* UIViewController.swift */; };
-		02A7F98D1D34D21400AF76FA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F98C1D34D21400AF76FA /* UIView.swift */; };
-		02A7F98F1D34D29000AF76FA /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7F98E1D34D29000AF76FA /* UIImage.swift */; };
-		02F82D341D36B7C900EE9EB5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F82D331D36B7C900EE9EB5 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		024567F51D36388B0010DC2F /* UISelectionField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISelectionField.swift; sourceTree = "<group>"; };
-		02A7F9691D342CC300AF76FA /* iX Journal.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iX Journal.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		02A7F96C1D342CC300AF76FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02A7F96E1D342CC300AF76FA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		02A7F9711D342CC300AF76FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		02A7F9731D342CC300AF76FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		02A7F9761D342CC300AF76FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		02A7F9781D342CC300AF76FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		029DB4091D384E0500D6A9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "iX Journal/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		029DB40A1D384E0500D6A9F1 /* EditEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditEntryViewController.swift; path = "iX Journal/EditEntryViewController.swift"; sourceTree = SOURCE_ROOT; };
+		029DB40B1D384E0500D6A9F1 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = "iX Journal/Entry.swift"; sourceTree = SOURCE_ROOT; };
+		029DB40C1D384E0500D6A9F1 /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryCell.swift; path = "iX Journal/EntryCell.swift"; sourceTree = SOURCE_ROOT; };
+		029DB40D1D384E0500D6A9F1 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryViewController.swift; path = "iX Journal/EntryViewController.swift"; sourceTree = SOURCE_ROOT; };
+		029DB40E1D384E0500D6A9F1 /* EntryViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryViewControllerDelegate.swift; path = "iX Journal/EntryViewControllerDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		029DB40F1D384E0500D6A9F1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "iX Journal/MapViewController.swift"; sourceTree = SOURCE_ROOT; };
+		029DB4101D384E0500D6A9F1 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = "iX Journal/UIColor.swift"; sourceTree = SOURCE_ROOT; };
+		029DB4111D384E0500D6A9F1 /* UIDateField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDateField.swift; path = "iX Journal/UIDateField.swift"; sourceTree = SOURCE_ROOT; };
+		029DB4121D384E0500D6A9F1 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = "iX Journal/UIImage.swift"; sourceTree = SOURCE_ROOT; };
+		029DB4131D384E0500D6A9F1 /* UISelectionField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UISelectionField.swift; path = "iX Journal/UISelectionField.swift"; sourceTree = SOURCE_ROOT; };
+		029DB4141D384E0500D6A9F1 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = "iX Journal/UIView.swift"; sourceTree = SOURCE_ROOT; };
+		029DB4151D384E0500D6A9F1 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = "iX Journal/UIViewController.swift"; sourceTree = SOURCE_ROOT; };
+		029DB4241D384E1100D6A9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "iX Journal/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		029DB4261D384E1100D6A9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "iX Journal/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		029DB4291D384E4200D6A9F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "iX Journal/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		02A7F9691D342CC300AF76FA /* iX Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iX Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02A7F9781D342CC300AF76FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "iX Journal/Info.plist"; sourceTree = "<group>"; };
 		02A7F97E1D342DF600AF76FA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		02A7F9801D342E3900AF76FA /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
-		02A7F9821D3431B200AF76FA /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		02A7F9841D34354C00AF76FA /* AddEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
-		02A7F9861D34359200AF76FA /* EntryViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewControllerDelegate.swift; sourceTree = "<group>"; };
-		02A7F9881D34459D00AF76FA /* UIDateField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDateField.swift; sourceTree = "<group>"; };
-		02A7F98A1D34495000AF76FA /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		02A7F98C1D34D21400AF76FA /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		02A7F98E1D34D29000AF76FA /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		02F82D331D36B7C900EE9EB5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,7 @@
 		02A7F96A1D342CC300AF76FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02A7F9691D342CC300AF76FA /* iX Journal.temp_caseinsensitive_rename.app */,
+				02A7F9691D342CC300AF76FA /* iX Journal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,21 +80,22 @@
 		02A7F96B1D342CC300AF76FA /* iX Journal */ = {
 			isa = PBXGroup;
 			children = (
-				02A7F96C1D342CC300AF76FA /* AppDelegate.swift */,
-				02A7F96E1D342CC300AF76FA /* MapViewController.swift */,
-				02A7F9841D34354C00AF76FA /* AddEntryViewController.swift */,
-				02A7F9861D34359200AF76FA /* EntryViewControllerDelegate.swift */,
-				02A7F9821D3431B200AF76FA /* Entry.swift */,
-				02A7F9801D342E3900AF76FA /* EntryCell.swift */,
-				02A7F9731D342CC300AF76FA /* Assets.xcassets */,
-				02A7F9881D34459D00AF76FA /* UIDateField.swift */,
-				024567F51D36388B0010DC2F /* UISelectionField.swift */,
-				02A7F98A1D34495000AF76FA /* UIViewController.swift */,
-				02A7F98C1D34D21400AF76FA /* UIView.swift */,
-				02A7F98E1D34D29000AF76FA /* UIImage.swift */,
-				02F82D331D36B7C900EE9EB5 /* UIColor.swift */,
-				02A7F9701D342CC300AF76FA /* Main.storyboard */,
-				02A7F9751D342CC300AF76FA /* LaunchScreen.storyboard */,
+				029DB4291D384E4200D6A9F1 /* Assets.xcassets */,
+				029DB4091D384E0500D6A9F1 /* AppDelegate.swift */,
+				029DB40A1D384E0500D6A9F1 /* EditEntryViewController.swift */,
+				029DB40B1D384E0500D6A9F1 /* Entry.swift */,
+				029DB40C1D384E0500D6A9F1 /* EntryCell.swift */,
+				029DB40D1D384E0500D6A9F1 /* EntryViewController.swift */,
+				029DB40E1D384E0500D6A9F1 /* EntryViewControllerDelegate.swift */,
+				029DB40F1D384E0500D6A9F1 /* MapViewController.swift */,
+				029DB4101D384E0500D6A9F1 /* UIColor.swift */,
+				029DB4111D384E0500D6A9F1 /* UIDateField.swift */,
+				029DB4121D384E0500D6A9F1 /* UIImage.swift */,
+				029DB4131D384E0500D6A9F1 /* UISelectionField.swift */,
+				029DB4141D384E0500D6A9F1 /* UIView.swift */,
+				029DB4151D384E0500D6A9F1 /* UIViewController.swift */,
+				029DB4231D384E1100D6A9F1 /* LaunchScreen.storyboard */,
+				029DB4251D384E1100D6A9F1 /* Main.storyboard */,
 				02A7F9781D342CC300AF76FA /* Info.plist */,
 			);
 			name = "iX Journal";
@@ -106,7 +109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02A7F97B1D342CC400AF76FA /* Build configuration list for PBXNativeTarget "iX Journal" */;
 			buildPhases = (
-				02A7F9651D342CC300AF76FA /* Sources */,
+				029DB3E21D384D8B00D6A9F1 /* Sources */,
 				02A7F9661D342CC300AF76FA /* Frameworks */,
 				02A7F9671D342CC300AF76FA /* Resources */,
 			);
@@ -116,7 +119,7 @@
 			);
 			name = "iX Journal";
 			productName = iXplore;
-			productReference = 02A7F9691D342CC300AF76FA /* iX Journal.temp_caseinsensitive_rename.app */;
+			productReference = 02A7F9691D342CC300AF76FA /* iX Journal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -157,51 +160,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A7F9771D342CC300AF76FA /* LaunchScreen.storyboard in Resources */,
-				02A7F9741D342CC300AF76FA /* Assets.xcassets in Resources */,
-				02A7F9721D342CC300AF76FA /* Main.storyboard in Resources */,
+				029DB4271D384E1100D6A9F1 /* LaunchScreen.storyboard in Resources */,
+				029DB42A1D384E4200D6A9F1 /* Assets.xcassets in Resources */,
+				029DB4281D384E1100D6A9F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02A7F9651D342CC300AF76FA /* Sources */ = {
+		029DB3E21D384D8B00D6A9F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A7F9831D3431B200AF76FA /* Entry.swift in Sources */,
-				02F82D341D36B7C900EE9EB5 /* UIColor.swift in Sources */,
-				02A7F98F1D34D29000AF76FA /* UIImage.swift in Sources */,
-				02A7F96F1D342CC300AF76FA /* MapViewController.swift in Sources */,
-				02A7F9871D34359200AF76FA /* EntryViewControllerDelegate.swift in Sources */,
-				02A7F9811D342E3900AF76FA /* EntryCell.swift in Sources */,
-				024567F61D36388B0010DC2F /* UISelectionField.swift in Sources */,
-				02A7F9891D34459D00AF76FA /* UIDateField.swift in Sources */,
-				02A7F9851D34354C00AF76FA /* AddEntryViewController.swift in Sources */,
-				02A7F98B1D34495000AF76FA /* UIViewController.swift in Sources */,
-				02A7F98D1D34D21400AF76FA /* UIView.swift in Sources */,
-				02A7F96D1D342CC300AF76FA /* AppDelegate.swift in Sources */,
+				029DB4191D384E0500D6A9F1 /* EntryCell.swift in Sources */,
+				029DB41F1D384E0500D6A9F1 /* UIImage.swift in Sources */,
+				029DB41E1D384E0500D6A9F1 /* UIDateField.swift in Sources */,
+				029DB41A1D384E0500D6A9F1 /* EntryViewController.swift in Sources */,
+				029DB4211D384E0500D6A9F1 /* UIView.swift in Sources */,
+				029DB41B1D384E0500D6A9F1 /* EntryViewControllerDelegate.swift in Sources */,
+				029DB4201D384E0500D6A9F1 /* UISelectionField.swift in Sources */,
+				029DB4221D384E0500D6A9F1 /* UIViewController.swift in Sources */,
+				029DB4181D384E0500D6A9F1 /* Entry.swift in Sources */,
+				029DB4161D384E0500D6A9F1 /* AppDelegate.swift in Sources */,
+				029DB41D1D384E0500D6A9F1 /* UIColor.swift in Sources */,
+				029DB4171D384E0500D6A9F1 /* EditEntryViewController.swift in Sources */,
+				029DB41C1D384E0500D6A9F1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		02A7F9701D342CC300AF76FA /* Main.storyboard */ = {
+		029DB4231D384E1100D6A9F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				02A7F9711D342CC300AF76FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		02A7F9751D342CC300AF76FA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02A7F9761D342CC300AF76FA /* Base */,
+				029DB4241D384E1100D6A9F1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		029DB4251D384E1100D6A9F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				029DB4261D384E1100D6A9F1 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,10 +298,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = iXplore/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/iX Journal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iXperience.iX-Journal";
-				PRODUCT_NAME = "iX Journal.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "iX Journal";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -305,10 +311,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = iXplore/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/iX Journal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iXperience.iX-Journal";
-				PRODUCT_NAME = "iX Journal.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "iX Journal";
 			};
 			name = Release;
 		};

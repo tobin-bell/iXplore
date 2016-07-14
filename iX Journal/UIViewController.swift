@@ -1,6 +1,6 @@
 //
 //  UIViewController.swift
-//  iXplore
+//  iX Journal
 //
 //  Created by Tobin Bell on 7/11/16.
 //  Copyright © 2016 iXperience. All rights reserved.
@@ -14,10 +14,6 @@ extension UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil))
         presentViewController(alert, animated: true, completion: nil)
-    }
-    
-    func addOverlay() {
-        
     }
     
 }
