@@ -82,10 +82,10 @@
 			children = (
 				029DB4291D384E4200D6A9F1 /* Assets.xcassets */,
 				029DB4091D384E0500D6A9F1 /* AppDelegate.swift */,
-				029DB40A1D384E0500D6A9F1 /* EditEntryViewController.swift */,
 				029DB40B1D384E0500D6A9F1 /* Entry.swift */,
 				029DB40C1D384E0500D6A9F1 /* EntryCell.swift */,
 				029DB40D1D384E0500D6A9F1 /* EntryViewController.swift */,
+				029DB40A1D384E0500D6A9F1 /* EditEntryViewController.swift */,
 				029DB40E1D384E0500D6A9F1 /* EntryViewControllerDelegate.swift */,
 				029DB40F1D384E0500D6A9F1 /* MapViewController.swift */,
 				029DB4101D384E0500D6A9F1 /* UIColor.swift */,

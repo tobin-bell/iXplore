@@ -57,6 +57,10 @@ class Entry: NSObject, MKAnnotation, NSCoding, Comparable {
             latitude: coder.decodeObjectForKey("latitude") as? CLLocationDegrees ?? 0,
             longitude: coder.decodeObjectForKey("longitude") as? CLLocationDegrees ?? 0
         )
+        
+        if self.title!.isEmpty {
+            self.title = "Untitled"
+        }
     }
     
     func encodeWithCoder(coder: NSCoder) {

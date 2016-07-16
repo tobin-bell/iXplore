@@ -24,7 +24,7 @@ class EditEntryViewController: UIViewController,
     let geocoder = CLGeocoder()
     var coordinate: CLLocationCoordinate2D?
     
-    var entry: Entry!
+    var entry: Entry?
     var delegate: EditEntryViewControllerDelegate?
     
     var notesFieldOriginalHeight: CGFloat!
@@ -35,7 +35,7 @@ class EditEntryViewController: UIViewController,
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if entry != nil {
+        if let entry = entry {
             
             // Populate the static fields with the entry's information.
             titleField.text = entry.title
@@ -118,7 +118,7 @@ class EditEntryViewController: UIViewController,
         
         // If we have an entry object, we are updating it, rather than creating a new one.
         // Update its fields and notify our delegate.
-        if entry != nil {
+        if let entry = entry {
             
             entry.title = titleField.text
             entry.date = dateField.date
@@ -131,8 +131,8 @@ class EditEntryViewController: UIViewController,
             
             // If the entry property was nil, then we are creating a new entry.
             // Initialize it and notify our delegate.
-            let entry = Entry(title: titleField.text!,
-                              notes: notesField.text!,
+            let entry = Entry(title: titleField.text,
+                              notes: notesField.text,
                               date: dateField.date,
                               coordinate: coordinate,
                               photo: photoImage.image)

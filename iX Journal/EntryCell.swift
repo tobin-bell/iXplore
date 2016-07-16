@@ -12,7 +12,7 @@ class EntryCell: UITableViewCell {
     
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var subtitleLabel: UILabel!
-    @IBOutlet private weak var photoView: UIImageView!
+    @IBOutlet private weak var photoView: UIImageView?
     
     var title: String {
         get {
@@ -34,10 +34,10 @@ class EntryCell: UITableViewCell {
     
     var photo: UIImage? {
         get {
-            return photoView.image!
+            return photoView?.image!
         }
         set {
-            photoView.image = newValue
+            photoView?.image = newValue
         }
     }
 
